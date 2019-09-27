@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="1714bbruce1i">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="PF0UM2L1\MSSQLSERVER17DEV:MCGLADREY\E054416">
+          <Created>2019-09-26T21:48:10.9906831-05:00</Created>
+          <Type>SQL</Type>
+          <Server>PF0UM2L1\MSSQLSERVER17DEV</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>WorkshopCoop</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="WorkshopCoop.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PF0UM2L1\MSSQLSERVER17DEV:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PF0UM2L1\MSSQLSERVER17DEV</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>WorkshopCoop.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items>
+        <FileNode Name="address.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>address.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="bbruce_1714EntitiesWorksheet_UserStories_Ex1I.html">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>bbruce_1714EntitiesWorksheet_UserStories_Ex1I.html</FullPath>
+        </FileNode>
+        <FileNode Name="benchspace.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>benchspace.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="duration.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>duration.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="inventory.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>inventory.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="inventoryitems.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>inventoryitems.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="invoice.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>invoice.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="lineitem.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>lineitem.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="person.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>person.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="receipt.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>receipt.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="rentaltool.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rentaltool.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="state.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>state.PNG</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
