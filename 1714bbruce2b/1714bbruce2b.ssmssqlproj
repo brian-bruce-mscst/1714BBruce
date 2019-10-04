@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="1714bbruce2a">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="1714bbruce2b">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="PF0UM2L1\MSSQLSERVER17DEV:MCGLADREY\E054416">
-          <Created>2019-10-01T16:26:30.7528464-05:00</Created>
+          <Created>2019-10-04T07:56:35.004587-05:00</Created>
           <Type>SQL</Type>
           <Server>PF0UM2L1\MSSQLSERVER17DEV</Server>
           <UserName />
@@ -19,75 +19,69 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="SQLQuery1.sql">
+        <FileNode Name="1714bbruce2b.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PF0UM2L1\MSSQLSERVER17DEV:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>PF0UM2L1\MSSQLSERVER17DEV</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
+          <FullPath>1714bbruce2b.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
       <Items>
-        <FileNode Name="1714BBruceDatabaseDiagram.PNG">
+        <FileNode Name="2b1.PNG">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>1714BBruceDatabaseDiagram.PNG</FullPath>
+          <FullPath>2b1.PNG</FullPath>
         </FileNode>
-        <FileNode Name="2a1.PNG">
+        <FileNode Name="2b2.PNG">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>2a1.PNG</FullPath>
+          <FullPath>2b2.PNG</FullPath>
         </FileNode>
-        <FileNode Name="2a2.PNG">
+        <FileNode Name="2b3.PNG">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>2a2.PNG</FullPath>
+          <FullPath>2b3.PNG</FullPath>
         </FileNode>
-        <FileNode Name="2a3.PNG">
+        <FileNode Name="2b4.PNG">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>2a3.PNG</FullPath>
+          <FullPath>2b4.PNG</FullPath>
         </FileNode>
-        <FileNode Name="2a4.PNG">
+        <FileNode Name="2b5.PNG">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>2a4.PNG</FullPath>
+          <FullPath>2b5.PNG</FullPath>
         </FileNode>
-        <FileNode Name="2a5.PNG">
+        <FileNode Name="2b6.PNG">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>2a5.PNG</FullPath>
+          <FullPath>2b6.PNG</FullPath>
         </FileNode>
-        <FileNode Name="2a6.PNG">
+        <FileNode Name="2b7.PNG">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>2a6.PNG</FullPath>
+          <FullPath>2b7.PNG</FullPath>
         </FileNode>
-        <FileNode Name="2a7.PNG">
+        <FileNode Name="2b8.PNG">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>2a7.PNG</FullPath>
+          <FullPath>2b8.PNG</FullPath>
         </FileNode>
-        <FileNode Name="2a8.PNG">
+        <FileNode Name="2b9.PNG">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>2a8.PNG</FullPath>
-        </FileNode>
-        <FileNode Name="2a9.PNG">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>2a9.PNG</FullPath>
+          <FullPath>2b9.PNG</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
