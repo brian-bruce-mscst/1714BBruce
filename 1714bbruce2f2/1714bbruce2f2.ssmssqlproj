@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="1714bbruce2f2">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="PF0UM2L1\MSSQLSERVER17DEV:MCGLADREY\E054416">
+          <Created>2019-10-24T13:08:06.51044-05:00</Created>
+          <Type>SQL</Type>
+          <Server>PF0UM2L1\MSSQLSERVER17DEV</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>AnimalShelter1714</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="1714bbruce2f.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:PF0UM2L1\MSSQLSERVER17DEV:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>PF0UM2L1\MSSQLSERVER17DEV</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>1714bbruce2f.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items>
+        <FileNode Name="2f1.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>2f1.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="2f2.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>2f2.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="2f3.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>2f3.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="2f4.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>2f4.PNG</FullPath>
+        </FileNode>
+        <FileNode Name="edmx_listoftables.PNG">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>edmx_listoftables.PNG</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
