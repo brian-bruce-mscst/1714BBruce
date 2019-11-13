@@ -1,0 +1,50 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1714bbruce3a"
+        xmlns:_1714bbruce2g2="clr-namespace:_1714bbruce2g2;assembly=1714bbruce2g2" x:Class="_1714bbruce3a.MainWindow"
+        mc:Ignorable="d"
+        Title="1714bbruce3a Building Form" Height="298.709" Width="356.357" Loaded="Window_Loaded">
+    <Window.Resources>
+        <CollectionViewSource x:Key="buildingViewSource" d:DesignSource="{d:DesignInstance {x:Type _1714bbruce2g2:Building}, CreateList=True}"/>
+    </Window.Resources>
+    <Grid>
+
+        <Grid x:Name="grid1" VerticalAlignment="Top" Margin="12,43,0,0" HorizontalAlignment="Left" DataContext="{StaticResource buildingViewSource}" Width="324">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Address:"/>
+            <TextBox x:Name="addressTextBox" Width="212" VerticalAlignment="Center" Text="{Binding Address, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="2" Margin="3.4,4,-89,4" Height="24" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Building Name:"/>
+            <TextBox x:Name="buildingNameTextBox" Width="212" VerticalAlignment="Center" Text="{Binding BuildingName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="1" Margin="3.4,4,-89,4" Height="24" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="3" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="City:"/>
+            <TextBox x:Name="cityTextBox" Width="120" VerticalAlignment="Center" Text="{Binding City, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="3" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Id:"/>
+            <TextBox x:Name="idTextBox" Width="74" VerticalAlignment="Center" Text="{Binding Id, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3.4,4,0,4" Height="24" HorizontalAlignment="Left" Grid.Column="1" IsEnabled="False"/>
+            <Label VerticalAlignment="Center" Grid.Row="4" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="State:"/>
+            <TextBox x:Name="stateTextBox" Width="74" VerticalAlignment="Center" Text="{Binding State, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="4" Margin="3.4,4,0,4" Height="24" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="5" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Zip:"/>
+            <TextBox x:Name="zipTextBox" Width="74" VerticalAlignment="Center" Text="{Binding Zip, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="5" Margin="3.4,4,0,4" Height="24" HorizontalAlignment="Left" Grid.Column="1"/>
+        </Grid>
+        <ToolBar x:Name="toolBar" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="350" Margin="0,0,-0.4,0">
+            <Button x:Name="firstButton" Content="|&lt;" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,0.2" Click="firstButton_Click" Height="31"/>
+            <Button x:Name="backButton" Content="&lt;" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,0.2" Click="backButton_Click" Height="31"/>
+            <Button x:Name="nextButton" Content="&gt;" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,0.2" Click="nextButton_Click" Height="31"/>
+            <Button x:Name="lastButton" Content="&gt;|" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,0.2" Click="lastButton_Click" Height="31"/>
+            <Button x:Name="saveButton" Content="Save" VerticalAlignment="Bottom" Width="42" Margin="0,0,0,0.2" Click="saveButton_Click" Height="31"/>
+        </ToolBar>
+
+    </Grid>
+</Window>
