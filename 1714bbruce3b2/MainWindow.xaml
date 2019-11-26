@@ -1,0 +1,87 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1714bbruce3b2"
+        xmlns:_1714bbruce2g2="clr-namespace:_1714bbruce2g2;assembly=1714bbruce2g2" x:Class="_1714bbruce3b2.MainWindow"
+        mc:Ignorable="d"
+        Title="1714bbruce3b2: Apts, Bldgs, Tenant" Height="330.42" Width="693.007" Loaded="Window_Loaded">
+    <Window.Resources>
+        <CollectionViewSource x:Key="apartmentViewSource" d:DesignSource="{d:DesignInstance {x:Type _1714bbruce2g2:Apartment}, CreateList=True}"/>
+        <CollectionViewSource x:Key="apartmentInvoicesViewSource" Source="{Binding Invoices, Source={StaticResource apartmentViewSource}}"/>
+        <CollectionViewSource x:Key="apartmentInvoicesLineItemsViewSource" Source="{Binding LineItems, Source={StaticResource apartmentInvoicesViewSource}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource apartmentInvoicesLineItemsViewSource}" Margin="0,0,0,-0.2" HorizontalAlignment="Left" Width="686">
+
+        <Grid x:Name="grid1" VerticalAlignment="Top" Margin="10,53,0,0" HorizontalAlignment="Left" DataContext="{StaticResource apartmentViewSource}" Height="231" Width="290">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Apartment Num:"/>
+            <TextBox x:Name="apartmentNumTextBox" Width="66" VerticalAlignment="Center" Text="{Binding ApartmentNum, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="1" Margin="3.4,4.4,0,4.4" Height="24" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="4" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Bathrooms:"/>
+            <TextBox x:Name="bathroomsTextBox" Width="66" VerticalAlignment="Center" Text="{Binding Bathrooms, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="4" Margin="3.4,5.2,0,4.6" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="5" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Id:" Height="0"/>
+            <TextBox x:Name="idTextBox" Width="67" VerticalAlignment="Center" Text="{Binding Id, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="5" Margin="2.6,4.6,0,4.4" Height="0" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="6" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Rent:"/>
+            <TextBox x:Name="rentTextBox" Width="66" VerticalAlignment="Center" Text="{Binding Rent, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="6" Margin="3.4,4.8,0,4.2" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Grid.Row="7" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Square Feet:"/>
+            <TextBox x:Name="squareFeetTextBox" Width="66" VerticalAlignment="Center" Text="{Binding SquareFeet, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="7" Margin="3.4,4.8,0,4.2" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Building name:" Width="98"/>
+            <TextBox x:Name="buildingNameTextBox" Width="175" VerticalAlignment="Center" Text="{Binding Building.BuildingName, NotifyOnValidationError=True, ValidatesOnExceptions=True}" Margin="3.4,5,-52,4.8" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+            <Label VerticalAlignment="Center" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Tenant:" Width="98" Grid.Row="2"/>
+            <TextBox x:Name="tenantNameTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Tenant.LastName, NotifyOnValidationError=True, ValidatesOnExceptions=True}" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="2"/>
+            <Label VerticalAlignment="Center" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="Administrator:" Width="98" Grid.Row="3"/>
+            <TextBox x:Name="adminNameTextBox" Width="120" VerticalAlignment="Center" Text="{Binding Admin.LastName, NotifyOnValidationError=True, ValidatesOnExceptions=True}" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="3"/>
+        </Grid>
+        <ToolBar x:Name="toolBar" Height="32" Margin="0,0,386,0" VerticalAlignment="Top">
+            <Button x:Name="firstButton" Content="|&lt;" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,-3.8" Click="firstButton_Click" Height="31"/>
+            <Button x:Name="backButton" Content="&lt;" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,-3.8" Click="backButton_Click" Height="31"/>
+            <Button x:Name="nextButton" Content="&gt;" VerticalAlignment="Stretch" Width="32" Margin="0,0,0,-3.8" Click="nextButton_Click"/>
+            <Button x:Name="lastButton" Content="&gt;|" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,-3.8" Click="lastButton_Click" Height="31"/>
+        </ToolBar>
+        <Grid x:Name="grid2" DataContext="{StaticResource apartmentInvoicesViewSource}" HorizontalAlignment="Left" Margin="373,53,0,0" VerticalAlignment="Top" Width="277">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" MinWidth="106.4"/>
+                <ColumnDefinition Width="Auto" MinWidth="151.2"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Due Date:" Grid.Column="1" HorizontalAlignment="Left" Margin="2.2,3,0,3" VerticalAlignment="Center" Height="26" Width="62"/>
+            <DatePicker x:Name="dueDateDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3.2,4,0,4" Grid.Row="1" SelectedDate="{Binding DueDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Height="24" Width="101"/>
+            <Label Content="Id:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" VerticalAlignment="Center" Height="26" Width="22"/>
+            <TextBox x:Name="idTextBox1" HorizontalAlignment="Left" Height="24" Margin="4,4,0,4" Text="{Binding Id, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="60" Grid.Row="1"/>
+            <Label Content="Invoice Date:" Grid.Column="2" HorizontalAlignment="Left" Margin="1,3,0,3" VerticalAlignment="Center" Height="26" Width="78"/>
+            <DatePicker x:Name="invoiceDateDatePicker" Grid.Column="2" HorizontalAlignment="Left" Margin="1,4,0,4" Grid.Row="1" SelectedDate="{Binding InvoiceDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Height="24" Width="101"/>
+        </Grid>
+        <DataGrid x:Name="lineItemsDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="373,122,10,17" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="idColumn" Binding="{Binding Id}" Header="Id" Width="60"/>
+                <DataGridTextColumn x:Name="amountColumn" Binding="{Binding Amount}" Header="Amount" Width="60"/>
+                <DataGridTextColumn x:Name="descriptionColumn" Binding="{Binding Description}" Header="Description" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <ToolBar x:Name="toolBar_Copy" Height="32" Margin="373,0,10,0" VerticalAlignment="Top">
+            <Button x:Name="firstInvoiceButton" Content="|&lt;" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,-3.8" Click="firstInvoiceButton_Click" Height="31"/>
+            <Button x:Name="backInvoiceButton" Content="&lt;" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,-3.8" Click="backInvoiceButton_Click" Height="31"/>
+            <Button x:Name="nextInvoiceButton" Content="&gt;" VerticalAlignment="Stretch" Width="32" Margin="0,0,0,-3.8" Click="nextInvoiceButton_Click"/>
+            <Button x:Name="lastInvoiceButton" Content="&gt;|" VerticalAlignment="Bottom" Width="32" Margin="0,0,0,-3.8" Click="lastInvoiceButton_Click" Height="31"/>
+        </ToolBar>
+
+    </Grid>
+</Window>
